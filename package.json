@@ -1,0 +1,26 @@
+{
+  "name": "@mozilla-protocol/eslint-config",
+  "version": "1.0.0",
+  "description": "A shared ESLint config for Protocol related projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozilla/eslint-config-protocol.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Alex Gibson",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mozilla/eslint-config-protocol/issues"
+  },
+  "homepage": "https://github.com/mozilla/eslint-config-protocol#readme",
+  "peerDependencies": {
+      "eslint": ">= 5"
+  }
+}
