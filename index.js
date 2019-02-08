@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     env: {
         'browser': true,
@@ -13,7 +15,7 @@ module.exports = {
     rules: {
         // Require strict mode directive in top level functions
         // https://eslint.org/docs/rules/strict
-        'strict': ['error', 'function'],
+        'strict': ['error', 'safe'],
 
         // This option sets a specific tab width for your code
         // https://eslint.org/docs/rules/indent

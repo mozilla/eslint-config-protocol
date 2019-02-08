@@ -4,7 +4,7 @@
   "description": "A shared ESLint config for Protocol related projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/test.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/mozilla/eslint-config-protocol#readme",
   "peerDependencies": {
-      "eslint": ">= 5"
+    "eslint": ">= 5"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0"
   }
 }
