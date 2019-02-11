@@ -2,14 +2,18 @@
 
 module.exports = {
     env: {
-        'browser': true,
-        'jasmine': true
+        'commonjs': true,
+        'node': true,
+        'es6': true
     },
     extends: 'eslint:recommended',
+    parserOptions: {
+        ecmaVersion: 8
+    },
     rules: {
         // Require strict mode directive in top level functions
         // https://eslint.org/docs/rules/strict
-        'strict': ['error', 'function'],
+        'strict': ['error', 'global'],
 
         // This option sets a specific tab width for your code
         // https://eslint.org/docs/rules/indent
@@ -20,7 +24,7 @@ module.exports = {
         'linebreak-style': ['error', 'unix'],
 
         // Specify whether double or single quotes should be used
-        'quotes': ['error', 'single'],
+        'quotes': ['error', 'single', { 'allowTemplateLiterals': true }],
 
         // Require or disallow use of semicolons instead of ASI
         'semi': ['error', 'always'],
@@ -64,13 +68,6 @@ module.exports = {
         // Disallow empty functions
         // https://eslint.org/docs/rules/no-empty-function
         'no-empty-function': 'error',
-
-        // Require radix parameter
-        // https://eslint.org/docs/rules/radix
-        'radix': 'error'
-    },
-    globals: {
-        'Mzp': true,
     }
 };
 

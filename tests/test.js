@@ -5,15 +5,15 @@ const eslint = require('eslint');
 
 const input = [
     'index.js',
+    'index-node.js',
     'tests/test.js',
 ];
 
 const output = new eslint.CLIEngine({
     envs: ['es6', 'node'],
-    configFile: 'index.js',
+    configFile: 'index-node.js',
     useEslintrc: false,
 }).executeOnFiles(input);
-
 
 input.forEach((file, index) => {
     if (output.results[index].messages.length) {
