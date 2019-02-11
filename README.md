@@ -7,7 +7,7 @@ A shared [ESLint](https://eslint.org/) config for [Protocol](https://github.com/
 ## Installation
 
 ```
-npm install @mozilla-protocol/eslint-config
+npm install @mozilla-protocol/eslint-config --save-dev
 ```
 
 ## Configuration
